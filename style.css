@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Permanent+Marker&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #000;
+}
+/*body{
+    background-image: url(assets/banner.jpeg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+
+}*/
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    background-image: url(assets/jungle.jpeg);
+    
+}
+
+.logo{
+    width: 200px;
+    cursor: pointer;
+    margin: 30px 0;
+    position: relative;
+    left: 50%;
+    margin-top: 45px;
+    transform: translate(-50%);
+}
+
+.tchup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 90px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 30px;
+  /*  padding-top: 10px;*/
+    display: inline;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Righteous', cursive;
+    color:rgb(255, 255, 255);
+    font-size: 13px;
+    text-decoration: none;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .5s;
+}
+
+a:hover {
+  background-size: 100% 100%;
+}
+
+.row{
+    /*display: flex;
+    justify-content: space-between;
+    align-items: center;*/
+    position:relative;
+    margin: 100px 0;
+}
+
+.img {
+    position:absolute;
+    margin-left: 420px;
+    margin-top: 50px;
+    width: 1000px;
+    height: 500px;
+}
+
+.img img{
+    width: 1000px;
+    height: auto; 
+    margin-top: -60px;
+    margin-left: 100px;
+}
+
+.img3 {
+   position:absolute;
+    margin-left: 370px;
+    width: 200px;
+    height: 200px;
+}
+.img3 img{
+    width: 330px;
+    height: auto; 
+    margin-left: 1000px;
+    margin-top: 130px;
+}
+.img4 {
+   position:absolute;
+    /*margin-left: 370px;*/
+    width: 50%;
+    height: auto;
+    display: flex;
+    left: 18%;
+    margin-top: 300px;
+}
+.img4 img{
+    width: 300px;
+    /*margin-left: 1000px;
+    margin-top: 130px;*/
+}
+
+h3{
+    display: flex;
+    position: absolute;
+    color: white;
+    margin-top: 200px;
+    margin-left: 30px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 60px;
+    left: 35%;
+}
+
+/*.col-1{
+    flex-basis: 40%;
+    position: absolute;
+    margin-left: 120px;
+}*/
+
+/*.col-1 h2{
+    font-size: 54px;
+    color: rgb(255, 255, 255);
+    mix-blend-mode: difference;
+}*/
+
+.col-1 h3{
+    font-size: 30px;
+    color: #dbdbdb;
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+
+.col-1 p{
+    font-size: 16px;
+    color: #b7b7b7;
+    font-weight: 100;
+}
+
+.col-1 h4{
+    font-size: 20px;
+    margin: 30px 0;
+}
+
+button{
+    width: 300px;
+    height: 80px;
+    display: flex;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color : #fff;
+    background: linear-gradient(to right, #fb5283, #ff3527);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.50s;
+    margin-top: 270px;
+    margin-left: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover{
+    width: 320px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-1 {
+    position: relative;
+    width: 40%;
+    height: 45px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 45px;
+}
+
+.col-1 .preTxt {
+    /*position: absolute;*/
+    height: 45px;
+    top:0%;
+    margin-left: 10px;
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+    font-family: 'Staatliches', cursive;
+    mix-blend-mode: difference;
+}
+
+.col-1 .changeHidden {
+    margin-left: 100px;
+    left: 0%;
+    text-align: left;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    margin-top: 120px;
+    background-color: #5018e9;
+    mix-blend-mode: difference;
+}
+
+
+.col-1 .changeHidden .contenant {
+
+    position: relative;
+    animation: carousel 8s ease-in-out infinite;
+    mix-blend-mode: difference;
+    left: 8%;
+}
+
+
+.col-1 .changeHidden .element {
+    display: block;
+    font-weight: 700;
+    text-shadow: 4px 4px 4px #fdfdfd;
+    margin-left: 60px;
+    color:white;
+    font-size: 55px;
+    font-family: 'Fredoka One', cursive;
+    mix-blend-mode: difference;
+}
+
+@keyframes carousel {
+    0%, 20% {
+        transform: translateY(+45px);
+    }
+    25%, 45% {
+        transform: translateY(-45px);
+    }
+    50%, 70% {
+        transform: translateY(-90px);
+    }
+    75%, 95% {
+        transform: translateY(-135px);
+    }
+    100% {
+        transform: translateY(-180px);
+    }
+    100% {
+        transform: translateY(+45px);
+    }
+}
+
+.line{
+   position: fixed;
+    top: 0;
+    left: 40%;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 150px;
+}
+
+svg{
+    display: inline-block;  
+    height: 50%;
+}
+#yo{
+    width:300px;
+    height:300px;
+}

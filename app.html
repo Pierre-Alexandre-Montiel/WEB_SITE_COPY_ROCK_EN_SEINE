@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RockEnSeine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="navbar">
+            <img src="assets/res_black.png" class="logo">
+        </div>
+        <div class="tchup">
+            <nav>
+                <ul>
+                    <li><a href="">Billetterie</a></li>
+                    <li><a href="">Programmation</a></li>
+                    <li><a href="">Le Festival</a></li>
+                    <li><a href="">Infos Pratique</a></li>
+                </ul>
+            </nav>
+        </div>
+    <div class="line">
+                <svg id="yo" viewBox="0 0 10 700">
+                    <path id="triangle" fill="none" d="M32 149V53H57.5C66 69.5 71.5 64.5 62 84C51 95 50.5 98 54 110C56.8 119.6 64.8333 135.333 68.5 142L94 90.5M94 90.5V18.5C101.2 5.30001 102.5 0.5 117.5 0.500015L129.5 3.5L134.5 14V67.5V81L129.5 90.5M94 90.5C101.833 93.1667 119.9 96.9 129.5 90.5M129.5 90.5L201 71C203.5 47.5 182.667 51 180 50L162 59M162 123.5V76V59M162 123.5V59M162 123.5L183 142L197 135L201 120L229 142V96M229 50V96M229 96L273.5 50M229 96L289.5 144.5H100H90V132M90 132H100M90 132V116L100 113.5L111.5 149V123.5L137.5 149V128L43.5 194L40 175.5L24 168L8.5 172.5L1 186V202L12 213.5L43.5 233.5L48.5 247L43.5 260.5L36 269.5H26.5H15L8.5 263.5L4.5 255.5M4.5 247V255.5M4.5 255.5L105 238H76L79.5 205M79.5 205H105M79.5 205L82.5 172.5L109.5 171L134.5 165H151.75M169 165H151.75M151.75 165V242H129.5H169H194.5L197 165L238.5 238V162.5L271 163.938M295 165L271 163.938M271 163.938V202M271 202H295M271 202L266 247L291 245" stroke="white"/>
+                </svg>
+            </div>
+    <div class="row">
+        <div class="img">
+            <img src="assets/banner.jpeg" alt="banner">
+        </div>
+        <div class="img3">
+            <img src="assets/impala.jpeg" alt="banner3">
+        </div> 
+        <div class="col-1">
+            <div class="preTxt">A l'AFFICHE DE ROCK EN SEINE CETTE ANNEE</div>
+                <div class="changeHidden">
+                <div class="contenant">
+                    <div class="element">Blink</div>
+                    <div class="element">Parcels</div>
+                    <div class="element">Justice</div>
+                    <div class="element">Post Malone</div>
+                    <div class="element">Manson</div>
+                    <div class="element"><br/></div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <p>(Pass 1 day / 2 days / 3 days)</p>
+        <h4>40$</h4>
+        <button type="button">Buy Now</button>
+        <h3>PROGRAMMATION</h3>
+        <div class="img4">
+            <lu>
+                <li><img src="assets/offspring.jpg" alt="banner2"></li>
+                <li><img src="assets/blink.jpeg" alt="banner3"></li>
+                <li><img src="assets/green_day.jpg" alt="banner4"></li>
+            </lu>
+        </div>  
+        </div>
+    <script>
+    var triangle = document.getElementById("triangle");
+    var length = triangle.getTotalLength();
+    triangle.style.strokeDasharray = length;
+    triangle.style.strokeDashoffset = length;
+    window.addEventListener("scroll", myFunction);
+    function myFunction() {
+    var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+      var draw = length * scrollpercent;
+      triangle.style.strokeDashoffset = length - draw;
+    }
+    </script>
+</body>
+</html>
